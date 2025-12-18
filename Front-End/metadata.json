@@ -1,0 +1,5 @@
+{
+  "name": "Residential ERP",
+  "description": "A residential expense control system following ERP principles, featuring entity management and financial reporting.",
+  "requestFramePermissions": []
+}

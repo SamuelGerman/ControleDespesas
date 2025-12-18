@@ -1,0 +1,79 @@
+{
+  "People": [
+    {
+      "Id": "c8fd1a77-22c3-49f8-9710-34dff4214be7",
+      "Name": "Samuel",
+      "Age": 22
+    },
+    {
+      "Id": "5df8ecb8-3b67-4242-9dd6-19442957cd8b",
+      "Name": "Crian\u00E7a",
+      "Age": 5
+    }
+  ],
+  "Categories": [
+    {
+      "Id": "3d170b13-7e68-4222-bdcb-a2f9c4325250",
+      "Description": "Lazer",
+      "Purpose": "Despesa"
+    },
+    {
+      "Id": "0e8f03ad-1609-40be-9ab7-36cc6a260653",
+      "Description": "Sal\u00E1rio",
+      "Purpose": "Receita"
+    },
+    {
+      "Id": "4d745fcc-d7c7-4087-ab39-63710273eb6e",
+      "Description": "Mercado",
+      "Purpose": "Despesa"
+    },
+    {
+      "Id": "b60903ee-1f0b-472c-909b-ac82ba1a7383",
+      "Description": "Investimentos",
+      "Purpose": "Despesa"
+    },
+    {
+      "Id": "4c75c205-9b2c-48ef-a889-c538ab597ee7",
+      "Description": "Dividendos",
+      "Purpose": "Receita"
+    }
+  ],
+  "MoneyTransactions": [
+    {
+      "Id": "ab3a6cf8-90b8-4d17-b825-c38f80157919",
+      "Description": "Sal\u00E1rio",
+      "Amount": 3000,
+      "Type": "Receita",
+      "Date": "2025-12-16T21:07:17.7676356-03:00",
+      "CategoryId": "0e8f03ad-1609-40be-9ab7-36cc6a260653",
+      "PersonId": "c8fd1a77-22c3-49f8-9710-34dff4214be7"
+    },
+    {
+      "Id": "e54ead85-433a-4b97-9d1a-f3e933db4681",
+      "Description": "Compras do m\u00EAs",
+      "Amount": 600,
+      "Type": "Despesa",
+      "Date": "2025-12-16T21:07:43.7540326-03:00",
+      "CategoryId": "4d745fcc-d7c7-4087-ab39-63710273eb6e",
+      "PersonId": "c8fd1a77-22c3-49f8-9710-34dff4214be7"
+    },
+    {
+      "Id": "46471c36-5ec6-4ee2-9318-b32ee0b211c6",
+      "Description": "Aniversario de Namoro",
+      "Amount": 450,
+      "Type": "Despesa",
+      "Date": "2025-12-16T21:22:16.845082-03:00",
+      "CategoryId": "3d170b13-7e68-4222-bdcb-a2f9c4325250",
+      "PersonId": "c8fd1a77-22c3-49f8-9710-34dff4214be7"
+    },
+    {
+      "Id": "39ecb1a9-156e-4e68-bdbb-dcad0ac1bd5c",
+      "Description": "Mercado",
+      "Amount": 540,
+      "Type": "Despesa",
+      "Date": "2025-12-18T19:47:41.7580459-03:00",
+      "CategoryId": "4d745fcc-d7c7-4087-ab39-63710273eb6e",
+      "PersonId": "c8fd1a77-22c3-49f8-9710-34dff4214be7"
+    }
+  ]
+}
