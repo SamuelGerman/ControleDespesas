@@ -5,7 +5,7 @@ Tecnologias Utilizadas
 
 Front-end
 - React + TypeScript
-- ite
+- Vite
 - TailwindCSS
 - Recharts: Biblioteca para visualização de dados (Gráficos).
 - Lucide React: Ícones leves.
@@ -48,4 +48,5 @@ Abra um novo terminal na pasta raiz do projeto e execute:
 cd frontend
 npm install
 npm run dev
+
 
