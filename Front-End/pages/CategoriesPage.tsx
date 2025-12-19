@@ -3,6 +3,9 @@ import { Category, CategoryPurpose } from '../types';
 import { api } from '../services/apiService';
 import { Tags, PlusCircle } from 'lucide-react';
 
+// Página para gerenciar categorias, permitindo criação e listagem de categorias existentes.
+// UseStates para armazenar categorias, descrição e finalidade da nova categoria.
+// Chama o serviço de API para listar e criar categorias.
 const CategoriesPage: React.FC = () => {
   const [categories, setCategories] = useState<Category[]>([]);
   const [desc, setDesc] = useState('');

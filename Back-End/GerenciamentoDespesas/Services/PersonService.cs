@@ -3,6 +3,8 @@ using GerenciamentoDespesas.Models;
 
 namespace GerenciamentoDespesas.Services
 {
+    // Serviço para gerenciar operações relacionadas a pessoas (Get, Create e Delete básico)
+    /// Regras de negócio para exclusão de pessoa e suas transações associadas
     public class PersonService
     {
         private readonly JsonDataContext _context;

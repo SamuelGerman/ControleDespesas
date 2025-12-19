@@ -2,12 +2,13 @@ import React from 'react';
 import { LayoutDashboard, Users, Tags, Receipt, Wallet } from 'lucide-react';
 
 interface LayoutProps {
-  children: React.ReactNode;
+  content: React.ReactNode;
   activePage: string;
   onNavigate: (page: string) => void;
 }
-
-const Layout: React.FC<LayoutProps> = ({ children, activePage, onNavigate }) => {
+// Componente de Layout que inclui um menu lateral e uma área de conteúdo principal,
+// renderizados de acordo com a página ativa (content é o componente que será renderizado na seção do conteudo principal) e permite navegação entre páginas.
+const Layout: React.FC<LayoutProps> = ({ content, activePage, onNavigate }) => {
   const menuItems = [
     { id: 'dashboard', label: 'Visão Geral', icon: LayoutDashboard },
     { id: 'transactions', label: 'Transações', icon: Receipt },
@@ -29,7 +30,7 @@ const Layout: React.FC<LayoutProps> = ({ children, activePage, onNavigate }) => 
             <h1 className="text-xl font-bold text-slate-900 tracking-tight">Controle de Gastos</h1>
           </div>
         </div>
-
+        {/* Construção dos itens do menu lateral com .map */}
         <nav className="flex-1 px-4 py-6 space-y-1">
           {menuItems.map((item) => {
             const isActive = activePage === item.id;
@@ -72,7 +73,7 @@ const Layout: React.FC<LayoutProps> = ({ children, activePage, onNavigate }) => 
 
         <div className="flex-1 overflow-y-auto p-8">
           <div className="max-w-7xl mx-auto animate-fade-in">
-            {children}
+            {content} {/* Conteúdo principal renderizado aqui  */}
           </div>
         </div>
       </main>

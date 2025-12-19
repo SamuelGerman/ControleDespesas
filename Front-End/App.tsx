@@ -5,6 +5,8 @@ import PeoplePage from './pages/PeoplePage';
 import CategoriesPage from './pages/CategoriesPage';
 import TransactionsPage from './pages/TransactionsPage';
 
+// Componente principal da aplicação que gerencia a navegação entre diferentes páginas (Dashboard, Pessoas, Categorias, Transações).
+// UseState para armazenar a página atual e renderiza o componente correspondente dentro do Layout.
 const App: React.FC = () => {
   const [currentPage, setCurrentPage] = useState('dashboard');
 

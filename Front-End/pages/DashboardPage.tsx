@@ -4,6 +4,10 @@ import { Person, Category, Transaction, TransactionType } from '../types';
 import { api } from '../services/apiService';
 import { ArrowUpCircle, ArrowDownCircle, DollarSign, RefreshCw, AlertTriangle } from 'lucide-react';
 
+// Página de Dashboard que exibe uma visão geral das finanças, incluindo totais e gráficos.
+// Usa useStates para armazenar pessoas e transações, e useEffect para carregar dados da API ao montar o componente.
+// Utiliza useMemo para calcular totais e dados do gráfico somente quando necessário.
+//Utiliza Recharts para renderizar gráficos de barras.
 const DashboardPage: React.FC = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
@@ -56,7 +60,7 @@ const DashboardPage: React.FC = () => {
 
   return (
     <div className="space-y-8">
-      {/* KPIs */}
+      {/* Totais */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         <div className="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 flex items-center justify-between group hover:shadow-md transition">
           <div>
@@ -87,7 +91,7 @@ const DashboardPage: React.FC = () => {
         </div>
       </div>
 
-      {/* Chart */}
+      {/* Gráfico de Balanço Financeiro por Pessoa */}
       <div className="bg-white p-8 rounded-2xl shadow-sm border border-slate-100">
         <h3 className="text-lg font-bold text-slate-800 mb-6">Balanço Financeiro por Pessoa</h3>
         <div className="h-80">

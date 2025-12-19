@@ -3,6 +3,9 @@ import { Person } from '../types';
 import { api } from '../services/apiService';
 import { User, Trash2, PlusCircle, Baby } from 'lucide-react';
 
+// Página para gerenciar pessoas, permitindo criação e listagem de membros existentes.
+// UseStates para armazenar pessoas, nome e idade do novo membro.
+// Chama o serviço de API para listar, criar e deletar pessoas.
 const PeoplePage: React.FC = () => {
   const [people, setPeople] = useState<Person[]>([]);
   const [name, setName] = useState('');

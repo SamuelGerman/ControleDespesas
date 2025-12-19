@@ -2,6 +2,7 @@
 
 namespace GerenciamentoDespesas.Models
 {
+    //Representa uma transação financeira, seja despesa ou receita, com detalhes como descrição, valor, tipo, data, categoria e pessoa associada
     public class MoneyTransaction
     {
         public Guid Id { get; set; } = Guid.NewGuid();

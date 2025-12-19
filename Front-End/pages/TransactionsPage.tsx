@@ -3,6 +3,10 @@ import { Transaction, TransactionType, Category, Person, CategoryPurpose } from 
 import { api } from '../services/apiService';
 import { Plus, Filter, AlertCircle, Trash2 } from 'lucide-react';
 
+// Página para gerenciar transações financeiras, permitindo criação e listagem de transações existentes.
+// UseStates para armazenar transações, pessoas, categorias e campos do formulário.
+// Chama o serviço de API para listar e criar transações, além de listar pessoas e categorias.
+// Regras de negócio para validação de idade da pessoa ao selecionar tipo de transação.
 const TransactionsPage: React.FC = () => {
   const [transactions, setTransactions] = useState<Transaction[]>([]);
   const [people, setPeople] = useState<Person[]>([]);

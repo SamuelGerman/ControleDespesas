@@ -4,13 +4,13 @@ using System.Text.Json.Serialization;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Injeção de Dependência (Singleton para manter o estado do arquivo em memória enquanto roda)
+//injeÃ§Ã£o de dependÃªncia, singleton para o contexto de dados (pois Ã© um arquivo unico) e scoped para os serviÃ§os
 builder.Services.AddSingleton<JsonDataContext>();
 builder.Services.AddScoped<PersonService>();
 builder.Services.AddScoped<CategoryService>();
 builder.Services.AddScoped<TransactionService>();
 
-// Configuração de CORS (Para o React acessar)
+// Configuraï¿½ï¿½o de CORS (Para o React acessar)
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowAll",

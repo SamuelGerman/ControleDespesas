@@ -4,6 +4,8 @@ using GerenciamentoDespesas.Models;
 
 namespace GerenciamentoDespesas.Services
 {
+    // Serviço para gerenciar operações relacionadas a transações financeiras (Get e Create com validações)
+    // Regras de negócio para criação de transações considerando idade da pessoa e propósito da categoria
     public class TransactionService
     {
         private readonly JsonDataContext _context;

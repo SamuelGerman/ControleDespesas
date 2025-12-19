@@ -1,3 +1,5 @@
+//Arquivos de tipos (classes) compartilhados entre front-end e back-end.
+
 export enum TransactionType {
   EXPENSE = 'Despesa',
   INCOME = 'Receita'

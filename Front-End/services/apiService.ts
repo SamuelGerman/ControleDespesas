@@ -1,5 +1,9 @@
 import { Person, Category, Transaction } from '../types';
 
+//Serviço para comunicação com a API back-end.
+//Exporta um objeto 'api' com métodos para listar, criar e deletar pessoas,
+//categorias e transações.
+
 const API_BASE_URL = '/api'; 
 
 async function request<T>(endpoint: string, options?: RequestInit): Promise<T> {
@@ -24,10 +28,12 @@ async function request<T>(endpoint: string, options?: RequestInit): Promise<T> {
     if (response.status === 204) return {} as T;
     return response.json();
   } catch (error: any) {
-    console.error(`API Error on ${endpoint}:`, error);
+    console.error(`Erro na api em ${endpoint}:`, error);
     throw new Error(error.message || "Falha na comunicação com o servidor.");
   }
 }
+
+// Objeto exportado com métodos para interagir com a API
 
 export const api = {
   people: {

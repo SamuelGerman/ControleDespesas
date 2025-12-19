@@ -1,5 +1,5 @@
 {
-  "name": "Residential ERP",
-  "description": "A residential expense control system following ERP principles, featuring entity management and financial reporting.",
+  "name": "Controle de Gastos Residenciais",
+  "description": "Ferramenta para gerenciar despesas domésticas, permitindo o cadastro de pessoas, categorias e transações financeiras.",
   "requestFramePermissions": []
 }

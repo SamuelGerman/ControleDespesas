@@ -3,6 +3,8 @@ using GerenciamentoDespesas.Models;
 
 namespace GerenciamentoDespesas.Services
 {
+
+    // Serviço para gerenciar operações relacionadas a categorias (Get,Create e Delete básico)
     public class CategoryService
     {
         private readonly JsonDataContext _context;
