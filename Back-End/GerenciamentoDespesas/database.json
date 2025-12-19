@@ -6,9 +6,9 @@
       "Age": 22
     },
     {
-      "Id": "5df8ecb8-3b67-4242-9dd6-19442957cd8b",
-      "Name": "Crian\u00E7a",
-      "Age": 5
+      "Id": "20294591-6d3d-4fe7-8651-0cb559ff0dcc",
+      "Name": "Leticia",
+      "Age": 20
     }
   ],
   "Categories": [
@@ -36,6 +36,11 @@
       "Id": "4c75c205-9b2c-48ef-a889-c538ab597ee7",
       "Description": "Dividendos",
       "Purpose": "Receita"
+    },
+    {
+      "Id": "fc178721-ce4f-4636-8cd0-bdc9727d6101",
+      "Description": "Educa\u00E7\u00E3o",
+      "Purpose": "Despesa"
     }
   ],
   "MoneyTransactions": [
@@ -73,6 +78,15 @@
       "Type": "Despesa",
       "Date": "2025-12-18T19:47:41.7580459-03:00",
       "CategoryId": "4d745fcc-d7c7-4087-ab39-63710273eb6e",
+      "PersonId": "c8fd1a77-22c3-49f8-9710-34dff4214be7"
+    },
+    {
+      "Id": "cd1b6c32-81ef-4610-acf3-e3cc9e24fcd5",
+      "Description": "Nada",
+      "Amount": 1000,
+      "Type": "Receita",
+      "Date": "2025-12-19T19:22:01.7988804-03:00",
+      "CategoryId": "0e8f03ad-1609-40be-9ab7-36cc6a260653",
       "PersonId": "c8fd1a77-22c3-49f8-9710-34dff4214be7"
     }
   ]

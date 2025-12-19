@@ -7,7 +7,7 @@ import { ArrowUpCircle, ArrowDownCircle, DollarSign, RefreshCw, AlertTriangle } 
 // Página de Dashboard que exibe uma visão geral das finanças, incluindo totais e gráficos.
 // Usa useStates para armazenar pessoas e transações, e useEffect para carregar dados da API ao montar o componente.
 // Utiliza useMemo para calcular totais e dados do gráfico somente quando necessário.
-//Utiliza Recharts para renderizar gráficos de barras.
+// Utiliza Recharts para renderizar gráficos de barras.
 const DashboardPage: React.FC = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);

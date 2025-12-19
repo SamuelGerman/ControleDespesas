@@ -2,13 +2,13 @@ import React from 'react';
 import { LayoutDashboard, Users, Tags, Receipt, Wallet } from 'lucide-react';
 
 interface LayoutProps {
-  content: React.ReactNode;
+  children: React.ReactNode;
   activePage: string;
   onNavigate: (page: string) => void;
 }
 // Componente de Layout que inclui um menu lateral e uma área de conteúdo principal,
-// renderizados de acordo com a página ativa (content é o componente que será renderizado na seção do conteudo principal) e permite navegação entre páginas.
-const Layout: React.FC<LayoutProps> = ({ content, activePage, onNavigate }) => {
+// renderizados de acordo com a página ativa (children é o componente que será renderizado na seção do conteudo principal) e permite navegação entre páginas.
+const Layout: React.FC<LayoutProps> = ({ children, activePage, onNavigate }) => {
   const menuItems = [
     { id: 'dashboard', label: 'Visão Geral', icon: LayoutDashboard },
     { id: 'transactions', label: 'Transações', icon: Receipt },
@@ -73,7 +73,7 @@ const Layout: React.FC<LayoutProps> = ({ content, activePage, onNavigate }) => {
 
         <div className="flex-1 overflow-y-auto p-8">
           <div className="max-w-7xl mx-auto animate-fade-in">
-            {content} {/* Conteúdo principal renderizado aqui  */}
+            {children} {/* Conteúdo principal renderizado aqui  */}
           </div>
         </div>
       </main>
